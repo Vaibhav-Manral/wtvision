@@ -15,7 +15,7 @@ const show=(el,i)=>{
   if(i==0){
     setmove(2)
   }else{
-    setmove(i*20)
+    setmove(i*(100/tabs.length))
   }
     setindex(i)
 }
