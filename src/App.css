@@ -14,14 +14,11 @@ font-family: 'Roboto', sans-serif;
 
 .item{
 height:34px;
-letter-spacing: -0.02em;
 font-size: 16px;
 width:19%;
 border:1px solid;
-transition: all 0.5s ease-in;
+transition: all 0.5s ease-in-out;
 position: absolute;
-top: 50%;
-transform: translateY(-50%);
 border: 1px solid #fff;
 background-color: #4C4C4C;
 }
@@ -36,5 +33,5 @@ background-color: #4C4C4C;
   align-items: center;
   justify-content: center;
   height: 34px;
-  transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in-out;
 }

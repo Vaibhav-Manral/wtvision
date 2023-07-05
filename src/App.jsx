@@ -11,9 +11,9 @@ function App() {
 
  
 
-const show=(el,i)=>{
+const show=(i)=>{
   if(i==0){
-    setmove(2)
+    setmove(1)
   }else{
     setmove(i*(100/tabs.length))
   }
@@ -22,18 +22,19 @@ const show=(el,i)=>{
 
   return (
       <div className='maindiv'>
-        <div className='item' style={{left:`${move}%`}}>
+         <div className='item' style={{left:`${move}%`}}>
         </div>
         {
           tabs.map((el, i) => {
             return (
               <div className='_item1' style={{color:i==index?"#fff":"#808080"}} 
-              onClick={()=>show(el,i)}>
+              onClick={()=>show(i)}>
               {el}
               </div>  
             )
           })
         }
+       
       </div>
 
   )
